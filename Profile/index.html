@@ -43,6 +43,7 @@
         h3 {
             font-size: 1.2rem;
             margin-top: 1.2rem;
+            font-weight: 600;
         }
         ul {
             padding-left: 1.2rem;
@@ -69,13 +70,13 @@
 <div class="container">
     <header class="header">
         <img src="assets/images/profile.png" alt="Dhaval Trivedi" class="rounded-circle mb-3" width="120" height="120">
-        <h1>Dhaval Trivedi</h1>
-        <p class="lead">Senior iOS & React Native Developer | 9 Years Experience</p>
-        <p class="social">
-            <a href="https://linkedin.com/in/dhaval-trivedi" target="_blank">LinkedIn</a>
+            <h1>Dhaval Trivedi</h1>
+            <p class="lead">Senior iOS & React Native Developer | 9 Years Experience</p>
+            <p class="social">
+            <a href="https://www.linkedin.com/in/dhaval-trivedi-%EF%A3%BF-779011139/" target="_blank">LinkedIn</a>
             <a href="https://github.com/Dhaval1094" target="_blank">GitHub</a>
             <a href="mailto:trivedidhavalpunit@gmail.com">Email</a>
-        </p>
+            </p>
     </header>
 
     <section class="section about">
@@ -86,11 +87,11 @@
     <section class="section skills">
   <h2>Skills</h2>
   <ul>
-    <li><strong>Programming Languages:</strong> Swift, Objective-C, Python, JavaScript (React Native)</li>
+    <li><strong>Programming Languages:</strong> Swift, Objective-C, JavaScript (React Native)</li>
     <li><strong>Mobile Development:</strong> SwiftUI, UIKit, Combine, Core Data, ARKit, AVFoundation, PDFKit</li>
     <li><strong>Cross-Platform:</strong> React Native</li>
-    <li><strong>Cloud & Backend:</strong> Firebase (Auth, Firestore, FCM), Twilio, Red5Pro</li>
-    <li><strong>Dev Tools & CI/CD:</strong> Xcode, GitHub, Fastlane, TestFlight, App Store Connect, Jira</li>
+    <li><strong>Cloud & Backend:</strong> Firebase (Auth, Firestore, FCM, Realtime Database), GraphQL, Axios, Alamofire, Twilio, Red5Pro</li>
+    <li><strong>Dev Tools & CI/CD:</strong> Xcode, GitHub, Github Runner, Bitrise, TestFlight, App Store Connect, Jira</li>
     <li><strong>Architecture & Patterns:</strong> MVVM, MVP, SOLID Principles, REST APIs</li>
     <li><strong>Testing:</strong> XCTest, Manual QA, CI Pipelines</li>
     <li><strong>Deployment:</strong> Full lifecycle app release to App Store, including provisioning, build automation, and metadata management</li>
@@ -101,7 +102,15 @@
 
     <section class="section experience">
         <h2>Experience</h2>
-        <h3>Galaxy Weblinks Ltd – Lead iOS Developer (2021–Present)</h3>
+        
+        <h3>ACL Digital – Principal iOS Developer (2023–Present)</h3>
+        <ul>
+          <li>Led development of KoreLock smart lock system using React Native and Swift, supporting both iOS and Android platforms</li>
+          <li>Implemented IoT features including Bluetooth/Wi-Fi communication, secure access management, and lock-cloud-mobile sync</li>
+          <li>Led Agile-based sprints, code reviews, and CI/CD pipelines via GitHub workflows</li>
+        </ul>
+        
+        <h3>Galaxy Weblinks Ltd – Lead iOS Developer (2021–2023)</h3>
         <ul>
             <li>Led app development for NETGEAR Orbi and Nighthawk routers using Swift and SwiftUI</li>
             <li>Built onboarding flows, dynamic UI, and networking logic with JSON and Firebase</li>
@@ -128,8 +137,14 @@
     </section>
 
     <section class="section projects">
+        
   <h2>Highlighted Projects</h2>
 
+  <div class="project">
+    <h3>KoreLock – Smart Lock App</h3>
+    <p>IoT-enabled smart door lock app using Bluetooth and Wi-Fi for remote and local access control. Features include lock onboarding, secure authentication, user PIN access, scheduling, DFU, and sync between cloud and device. Built with React Native under Agile methodology.</p>
+  </div>
+  
   <div class="project">
     <h3>NETGEAR Orbi & Nighthawk</h3>
     <p>iOS applications for Wi-Fi router onboarding, satellite setup, and dynamic navigation using runtime JSON. Agile team-based development with multi-target builds, Firebase, and Instabug integration.</p>
@@ -148,19 +163,16 @@
   <div class="project">
     <h3>LECA Installer</h3>
     <p>App for solar panel sales and installation used by consultants. Covers quotations, power calculations, and syncs with admin backend. Built in Swift and Objective-C.</p>
-    <p><a href="https://apps.apple.com/us/app/id1515859081" target="_blank">App Store</a> | <a href="http://lecaustralia.com.au/" target="_blank">Website</a></p>
   </div>
 
   <div class="project">
     <h3>It's Live Now</h3>
     <p>Video monetization platform for creators. Supports one-to-one/one-to-many live sessions, secure payments, and Red5Pro-based streaming. Developed in Swift and Objective-C.</p>
-    <p><a href="https://apps.apple.com/us/app/its-live-now/id1468440365" target="_blank">App Store</a> | <a href="https://itslivenow.com/creators/sporting/" target="_blank">Website</a></p>
   </div>
 
   <div class="project">
     <h3>Catalog Viewer</h3>
     <p>iPad-only app for offline catalog access and annotation. Supports PDFs, images, and ZIPs with Core Data syncing. Features include drawing, bookmarks, PDFKit customizations, and backend sync.</p>
-    <p><a href="https://apps.apple.com/us/app/catalogviewer-2/id1488318627" target="_blank">App Store</a> | <a href="http://www.catalog-viewer.de/" target="_blank">Website</a></p>
   </div>
 
   <div class="project">
@@ -175,7 +187,7 @@
 
   <div class="project">
     <h3>Salooonz</h3>
-    <p>Spa and salon booking app with admin/user access. Includes appointment management and backend sync. Developed using Cocoa Touch and Objective-C.</p>
+    <p>Spa and salon booking app with admin/user access. Supports appointment scheduling, admin management, and backend synchronization. Developed using Cocoa Touch and Objective-C.</p>
   </div>
 
   <div class="project">
@@ -184,35 +196,16 @@
   </div>
 
   <div class="project">
-    <h3>Paper Aircraft</h3>
-    <p>Educational app for children to learn paper plane folding. Features in-app purchases and favorite tracking. Built in Objective-C with SQLite support.</p>
-  </div>
-
-  <div class="project">
     <h3>Argalon</h3>
     <p>Communication app using Twilio APIs for voice, video calls, and chat. Built in Swift and Objective-C.</p>
   </div>
 
-  <div class="project">
-    <h3>Falex</h3>
-    <p>Utility app for mechanical machinery calculations. Built in Objective-C with specialized formula integration.</p>
-  </div>
 </section>
 
     <section class="section education">
         <h2>Education</h2>
         <p>Bachelor of Technology (B.Tech), Ganpat University – 2012–2015</p>
     </section>
-
-    <section class="section contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:trivedidhavalpunit@gmail.com">trivedidhavalpunit@gmail.com</a></p>
-        <p>Portfolio: <a href="https://dhaval1094.github.io/Profile" target="_blank">View Online</a></p>
-    </section>
-
-    <footer class="footer text-center mt-5">
-        <p>© Dhaval Trivedi | Built with ❤️ on GitHub Pages</p>
-    </footer>
 </div>
 </body>
 </html>
